@@ -1,48 +1,25 @@
-import Navbar from 'react-boostrap/Navbar';
-import logo from './logo.svg';
+import {Navbar, Container, Nav,Button} from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import { BrowserRouter as Router, Routes, Route,} from "react-router-dom";
+import HomePage from './components/HomePage';
+import NavBar from './components/NavBar';
+import MoviePage from './components/MoviePage';
+import axios from 'axios';
 
-
-const 
 function App() {
-  return (
-    <>
-<Navbar bg="dark" variant="dark">
-<Container>
-<Navbar.Brand href="#home">Navbar</Navbar.Brand>
-<Nav className="me-auto">
-<Nav.Link href="#home">Home</Nav.Link>
-<Nav.Link href="#features">Features</Nav.Link>
-<Nav.Link href="#pricing">Pricing</Nav.Link>
-</Nav>
-</Container>
-</Navbar>
-<br />
-<Navbar bg="primary" variant="dark">
-<Container>
-<Navbar.Brand href="#home">Navbar</Navbar.Brand>
-<Nav className="me-auto">
-<Nav.Link href="#home">Home</Nav.Link>
-<Nav.Link href="#features">Features</Nav.Link>
-<Nav.Link href="#pricing">Pricing</Nav.Link>
-</Nav>
-</Container>
-</Navbar>
+    return (
+        <div class="container">
+        <Router>
+            <NavBar />
+            <Routes>
+                <Route path="/" element={<HomePage/>}/>
+                <Route path="/moviepage" element={<MoviePage/>}/>
+            </Routes>
+        </Router>
+        </div>
+    );
+  }
+  
 
-<br />
-<Navbar bg="light" variant="light">
-<Container>
-<Navbar.Brand href="#home">Navbar</Navbar.Brand>
-<Nav className="me-auto">
-<Nav.Link href="#home">Home</Nav.Link>
-<Nav.Link href="#features">Features</Nav.Link>
-<Nav.Link href="#pricing">Pricing</Nav.Link>
-</Nav>
-</Container>
-</Navbar>
-</>
-<h1> Movie Journal </h1>
-  );
-}
-
-export default App;
+  export default App;

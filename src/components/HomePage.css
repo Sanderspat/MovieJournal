@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@700&family=Montserrat:wght@200&family=Readex+Pro:wght@200&family=Yellowtail&display=swap');
+.letter_title{
+    font-family: 'Yellowtail', cursive;
+    font-size: 80px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: rgb(220, 159, 137);
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.button_color{
+    background-color:rgba(54, 105, 176, 0.619);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.button_color_two{
+    background-color:rgba(55, 42, 106, 0.619);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}

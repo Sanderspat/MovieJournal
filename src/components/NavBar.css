@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Readex+Pro:wght@200&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@700&family=Readex+Pro:wght@200&family=Yellowtail&display=swap');
+
+
+.NavTitle{
+    font-family:'Josefin Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
